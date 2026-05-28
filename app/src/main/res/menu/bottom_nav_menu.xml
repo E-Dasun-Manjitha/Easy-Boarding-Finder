@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_share_person"
+        android:icon="@drawable/ic_share_person"
+        android:title="Share" />
+    <item
+        android:id="@+id/nav_furniture"
+        android:icon="@drawable/ic_furniture"
+        android:title="Furniture" />
+    <item
+        android:id="@+id/nav_property"
+        android:icon="@drawable/ic_property"
+        android:title="Property" />
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/ic_contact"
+        android:title="Contact" />
+</menu>

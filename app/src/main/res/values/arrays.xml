@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SharePerson: Listing Type -->
+    <string-array name="share_person_types">
+        <item>Select Listing Type</item>
+        <item>Offering a Space (Seller)</item>
+        <item>Looking for a Space (User)</item>
+    </string-array>
+
+    <!-- SharePerson: Gender -->
+    <string-array name="share_person_genders">
+        <item>Select Gender Preference</item>
+        <item>Male Only</item>
+        <item>Female Only</item>
+        <item>Any</item>
+    </string-array>
+
+    <!-- SharePerson: Occupation -->
+    <string-array name="share_person_occupations">
+        <item>Select Occupation</item>
+        <item>Student</item>
+        <item>Working Professional</item>
+        <item>Self-Employed</item>
+        <item>Government Employee</item>
+        <item>Any</item>
+    </string-array>
+
+    <!-- SharePerson: Accommodation Type -->
+    <string-array name="accommodation_types">
+        <item>Select Accommodation Type</item>
+        <item>Boarding House</item>
+        <item>Annex</item>
+        <item>Shared Room</item>
+        <item>Single Room</item>
+        <item>Apartment</item>
+        <item>Hostel</item>
+    </string-array>
+
+    <!-- SharePerson: Room Type -->
+    <string-array name="room_types">
+        <item>Select Room Type</item>
+        <item>Single</item>
+        <item>Shared</item>
+        <item>Any</item>
+    </string-array>
+
+    <!-- SharePerson: Furnished Status -->
+    <string-array name="furnished_types">
+        <item>Select Furnished Status</item>
+        <item>Furnished</item>
+        <item>Semi-Furnished</item>
+        <item>Unfurnished</item>
+    </string-array>
+
+    <!-- SharePerson: Preferred Area (Sri Lankan Districts) -->
+    <string-array name="preferred_areas">
+        <item>Select Preferred Area</item>
+        <item>Colombo</item>
+        <item>Gampaha</item>
+        <item>Kalutara</item>
+        <item>Kandy</item>
+        <item>Matale</item>
+        <item>Nuwara Eliya</item>
+        <item>Galle</item>
+        <item>Matara</item>
+        <item>Hambantota</item>
+        <item>Jaffna</item>
+        <item>Kilinochchi</item>
+        <item>Mannar</item>
+        <item>Mullaitivu</item>
+        <item>Vavuniya</item>
+        <item>Batticaloa</item>
+        <item>Ampara</item>
+        <item>Trincomalee</item>
+        <item>Kurunegala</item>
+        <item>Puttalam</item>
+        <item>Anuradhapura</item>
+        <item>Polonnaruwa</item>
+        <item>Badulla</item>
+        <item>Monaragala</item>
+        <item>Ratnapura</item>
+        <item>Kegalle</item>
+    </string-array>
+</resources>

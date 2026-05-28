@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Semi-transparent dark circular background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#990F172A" /> <!-- Slate 900 with ~60% opacity -->
+            <size android:width="40dp" android:height="40dp"/>
+        </shape>
+    </item>
+    <!-- White back arrow icon centered inside the circle -->
+    <item
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp"
+        android:bottom="10dp"
+        android:drawable="@drawable/ic_back_arrow" />
+</layer-list>

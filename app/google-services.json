@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "834076743391",
+    "project_id": "easy-boarding-finder",
+    "storage_bucket": "easy-boarding-finder.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834076743391:android:8f04edb8a32cfaee183b6a",
+        "android_client_info": {
+          "package_name": "com.easyboardingfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834076743391-92rlpqr98cogrr8902dqks6r04jub55f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.easyboardingfinder",
+            "certificate_hash": "f1ed07df4fe1bdfdc41a34d40415c57c2029a999"
+          }
+        },
+        {
+          "client_id": "834076743391-hag1cna4ps6tpekfl4ub47v1vslhti38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl8FI3-BNXoG7AmFoqxIzvk18jbJs_l_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834076743391-hag1cna4ps6tpekfl4ub47v1vslhti38.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
