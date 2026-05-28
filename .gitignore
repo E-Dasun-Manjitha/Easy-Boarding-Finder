@@ -43,8 +43,8 @@ captures/
 .externalNativeBuild/
 .cxx/
 
-# Google Services (Uncomment if your project uses Firebase and you want to keep this private)
-# google-services.json
+# Google Services
+google-services.json
 
 # VS Code
 .vscode/

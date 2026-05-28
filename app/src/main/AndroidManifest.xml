@@ -21,7 +21,7 @@
         <!-- Google Maps API Key (Development Mode) -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBl8FI3-BNXoG7AmFoqxIzvk18jbJs_l_E" />
+            android:value="${MAPS_API_KEY}" />
 
         <!-- ─── Splash Screen ─── -->
         <activity

@@ -1,0 +1,8 @@
+## Template local properties — COPY this file to "local.properties" and fill in your keys.
+## DO NOT commit your local.properties containing actual keys to version control.
+
+# Google Maps API Key
+MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY_HERE
+
+# ImgBB API Key (For image uploads)
+IMGBB_API_KEY=YOUR_IMGBB_API_KEY_HERE
