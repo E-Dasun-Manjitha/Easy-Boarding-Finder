@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="Add Property"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Property Image Picker -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property Photos (Max 5)"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardAddPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/primary_blue"
+                    app:strokeWidth="1dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_add"
+                            app:tint="@color/primary_blue"
+                            android:contentDescription="Add Photo Icon" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Photo"
+                            android:textColor="@color/primary_blue"
+                            android:textSize="11sp"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSelectedImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Property Title"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                style="@style/InputFieldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="6dp"
+                android:hint="Enter property title"
+                android:paddingStart="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Property Type"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_field" />
+
+            <!-- Location Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Location"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    style="@style/InputFieldStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_height"
+                    android:layout_weight="1"
+                    android:hint="Location Address"
+                    android:paddingStart="16dp" />
+
+                <ImageButton
+                    android:id="@+id/btnMap"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_card"
+                    android:src="@drawable/ic_location"
+                    app:tint="@color/primary_blue" />
+
+                <ImageButton
+                    android:id="@+id/btnGps"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_card"
+                    android:src="@drawable/ic_share_person"
+                    app:tint="@color/primary_blue" />
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Monthly Rent (Rs.)" android:textStyle="bold" /><EditText android:id="@+id/etPrice" style="@style/InputFieldStyle" android:layout_marginTop="6dp" android:hint="Price" android:inputType="numberDecimal" android:paddingStart="16dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:weightSum="2"><LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beds" android:textStyle="bold" /><EditText android:id="@+id/etBedrooms" style="@style/InputFieldStyle" android:layout_marginTop="6dp" android:hint="0" android:inputType="number" android:paddingStart="16dp" /></LinearLayout><LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="8dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Baths" android:textStyle="bold" /><EditText android:id="@+id/etBathrooms" style="@style/InputFieldStyle" android:layout_marginTop="6dp" android:hint="0" android:inputType="number" android:paddingStart="16dp" /></LinearLayout></LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Phone" android:textStyle="bold" /><EditText android:id="@+id/etPhone" style="@style/InputFieldStyle" android:layout_marginTop="6dp" android:hint="Phone" android:inputType="phone" android:paddingStart="16dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Description" android:textStyle="bold" /><EditText android:id="@+id/etDescription" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="6dp" android:background="@drawable/bg_input_field" android:gravity="top" android:padding="16dp" android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="Add Property" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
